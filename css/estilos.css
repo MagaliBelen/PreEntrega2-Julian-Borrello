@@ -530,7 +530,10 @@ color: white; }
 }
 
 @media (max-width: 420px){
-  
+  .curio-1, .curio-2, .curio-3, .curio-4, .curio-5, .curio-6, .curio-7{
+    background-repeat: repeat;
+    background-size: cover;
+  }
 }
 
 /*-----------------------------JUICIO----------------------------------------*/
