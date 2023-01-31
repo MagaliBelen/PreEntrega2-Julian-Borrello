@@ -108,6 +108,7 @@ footer{
 
 .footer__copyright, .footer__texto{
   padding: 2%;
+  text-align: center;
 }
 
 
@@ -146,7 +147,6 @@ textarea {
 /*--------------------------INDEX--------------------------*/
 
 
-
 /*GRID AREA*/
 
 .grid-padre {  display: grid;
@@ -178,7 +178,6 @@ textarea {
   background-color: #a14e777a;
   padding: 10px;
   margin: 10px;
-
  }
 
 .slider { 
@@ -235,7 +234,6 @@ textarea {
       "slider" 
       "bio-OW";
       justify-items:center;
-      align-self: center;
   }
 
   .slider { 
@@ -244,6 +242,17 @@ textarea {
    }
 }
 
+@media (max-width: 420px){
+  .grid-padre {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.3fr 2.6fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo-OW"
+      "slider" 
+      "bio-OW";
+      justify-items:center;
+}}
 
 /*-----------------------------LIBROS----------------------------------------*/
  
@@ -404,6 +413,7 @@ padding: 10px;
 }
 
 
+
 /*-----------------------------CURIOSIDADES----------------------------------------*/
 
 /*GRID AREA*/
@@ -519,17 +529,16 @@ color: white; }
   }
 }
 
+@media (max-width: 420px){
+  
+}
+
 /*-----------------------------JUICIO----------------------------------------*/
 
 .juicio{
   text-align: center;
 }
 
-.juicio__oscar-y-alfred{
-  width: 350px;
-  height: 550x;
-  border: solid 4px black;
-}
 
 .juicio p{
   font-size: 20px;
@@ -548,6 +557,12 @@ color: white; }
   font-size: 35px;
   text-align: center;
   padding: 10px;
+}
+
+.juicio__oscar-y-alfred{
+  width: 350px;
+  height: 550x;
+  border: solid 4px black;
 }
 
 .juicio__nota{
@@ -595,4 +610,30 @@ color: white; }
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+@media (max-width: 420px){
+  .juicio__carcel{
+    width: 300px;
+    height: 200px;
+  }
+  .juicio__periodico{
+    width: 300px;
+    height: 200px;
+  }
+  .juicio__nota{
+    width: 300px;
+    height: 100px;
+  }
+
+  .juicio__oscar-y-alfred{
+    width: 250px;
+    height: 450x;
+  }
+
+  
+.juicio__libro{
+  width: 250px;
+  height: 350px;
+}
 }
