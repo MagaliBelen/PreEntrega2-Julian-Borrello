@@ -235,7 +235,13 @@ textarea {
       "slider" 
       "bio-OW";
       justify-items:center;
+      align-self: center;
   }
+
+  .slider { 
+    width: 300px;
+    height: 300px;
+   }
 }
 
 
